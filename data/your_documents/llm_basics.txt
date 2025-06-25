@@ -1,0 +1,3 @@
+Large Language Models (LLMs) are deep learning models trained on vast amounts of text data. They can understand and generate human-like language. Examples of LLMs include GPT, BERT, LLaMA, and Mistral.
+
+LLMs work by learning the statistical patterns of language and generating text based on the input prompt. They are used in tasks like translation, summarization, question-answering, and chatbot development.
