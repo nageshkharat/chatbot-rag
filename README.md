@@ -22,7 +22,7 @@ A Retrieval-Augmented Generation (RAG) chatbot that answers user queries based o
 
 ### 1. Clone Repository
 ```bash
-git clone <repository-url>
+git clone https://github.com/nageshkharat/chatbot-rag.git
 cd chatbot-rag
 ```
 
@@ -66,7 +66,7 @@ print('Embeddings generated successfully!')
 #### Option A: Run Both Services Locally
 ```bash
 # Terminal 1: Start FastAPI backend
-python -m app.main
+uvicorn app.main:app --port 8001
 
 # Terminal 2: Start Streamlit UI
 streamlit run ui/streamlit_app.py --server.port 8502
@@ -179,7 +179,6 @@ The application is fully dockerized with:
 - Support for more file formats (Word, PowerPoint)
 - Multiple LLM model options
 - Advanced chunking strategies
-- Vector database alternatives (Chroma, Pinecone)
 - Authentication and user management
 
 ## 🤝 Contributing
@@ -189,11 +188,3 @@ The application is fully dockerized with:
 3. Commit changes (`git commit -am 'Add new feature'`)
 4. Push to branch (`git push origin feature/new-feature`)
 5. Create Pull Request
-
-## 📄 License
-
-This project is open source and available under the MIT License.
-
----
-
-**Built with ❤️ using Python, FastAPI, Streamlit, and open-source AI models.**
